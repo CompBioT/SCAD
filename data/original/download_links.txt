@@ -1,0 +1,2 @@
+# gdsc_rma_raw.csv was downloaded from https://ibm.ent.box.com/v/paccmann-pytoda-data/folder/91948853171;
+# plesse rename 'gdsc_rma_raw.csv' as 'gdsc-rma_gene-expression.csv' and put into "SCAD/data/original/" folder
