@@ -290,9 +290,7 @@ for index, mbsize in enumerate(ls_mb_size):
         if adjust == "Y":
             X_5k_cells = X_5k_cells_raw.transpose()
             X_5k_cells.columns = X_5k_cells.columns.astype(str)
-            #intersect_gene = [value for value in XValGDSC.columns if value in X_5k_cells.columns]
-            intersect_gene = set(XValGDSC.columns).intersection(X_5k_cells.columns)
-
+            intersect_gene = [value for value in XValGDSC.columns if value in X_5k_cells.columns]
             X_5k = X_5k_cells[intersect_gene]
             XTrainGDSC = XTrainGDSC[intersect_gene]
             XValGDSC = XValGDSC[intersect_gene]
