@@ -3,7 +3,7 @@
 ## data splitting
 python SCAD/data/split_norm/split_data_SCAD_5fold_norm.py
 
-## hyper-parameter selection
+## hyper-parameter selection for each drug
 python SCAD/model/SCAD_5foldsCV_on_source_arg.py -e FX -d Gefitinib -g _norm -adj N
 
 ## retrain the model with selected hyper-parameters and test on target domain scRNA-seq data
